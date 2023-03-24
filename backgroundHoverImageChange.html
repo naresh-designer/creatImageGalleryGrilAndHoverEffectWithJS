@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hover-image-container">
+        <div class="imagesBox">
+
+            <div class="bgImage1" style="background-image: url(../images/7.jpg);"></div>
+            <div class="mid-content">
+                <nav>
+                    <ul>
+                        <li> <span>First Image</span>
+                            <div class="bgImage" >
+                                <div class="img" style="background-image: url(../images/1.jpg);"></div>
+                            </div>
+                        </li>
+                        <li> <span>Second Image</span>
+                            <div class="bgImage" >
+                                <div class="img" style="background-image: url(../images/2.jpg);"></div>
+                            </div>
+                        </li>
+                        <li> <span>Third Image</span>
+                            <div class="bgImage" >
+                                <div class="img" style="background-image: url(../images/3.jpg);"></div>
+                            </div>
+                        </li>
+                        <li> <span>Fourth Image</span>
+                            <div class="bgImage" >
+                                <div class="img" style="background-image: url(../images/4.jpg);"></div>
+                            </div>
+                        </li>
+                        <li> <span>Fifth Image</span>
+                            <div class="bgImage" >
+                                <div class="img" style="background-image: url(../images/5.jpg);"></div>
+                            </div>
+                        </li>
+                        <li> <span>Sixth Image</span>
+                            <div class="bgImage" >
+                                <div class="img" style="background-image: url(../images/6.jpg);"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- <div class="box">
+                <div class="bgImage"><img src="images/3.jpg" alt=""></div>
+                <div class="bgImage"><img src="images/4.jpg" alt=""></div>
+                <div class="bgImage"><img src="images/5.jpg" alt=""></div>
+                <div class="bgImage"><img src="images/6.jpg" alt=""></div>
+             </div> -->
+            
+            </div>
+    </div>
+    <script>
+        var showImage = document.querySelectorAll('li');
+        for(i = 0; i < showImage.length; i++){
+            showImage[i].addEventListener('mouseover', function(){
+            this.classList.add('active');
+        })
+            showImage[i].addEventListener('mouseout', function(){
+            this.classList.remove('active');
+        })
+    }
+        
+    </script>
+</body>
+</html>
